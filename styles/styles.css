@@ -75,11 +75,11 @@ p {
     background-size: cover;
 }
 
-.timeline-contener-bg-primary {
+.bg-primary {
     background-color: #ebf2f8;
 }
 
-.timeline-contener-bg-second {
+.bg-second {
     background-color: #fefefe;
 }
 
