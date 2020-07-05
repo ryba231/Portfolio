@@ -4,9 +4,6 @@ html, body {
     height: 100%;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
-}
-
-body {
     background-color: #fefefe;
 }
 
@@ -82,7 +79,7 @@ p {
     background: #323a4f;
 }
 
-.timeline-content {
+.timeline-content, .section-contener {
     text-align: center;
     padding-top: 30px;
     padding-bottom: 30px;
