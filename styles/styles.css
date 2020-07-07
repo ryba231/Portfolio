@@ -92,8 +92,10 @@ p {
 }
 
 .timeline-content, .section-contener {
+    display: flex;
     text-align: center;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     padding-top: 30px;
     padding-bottom: 30px;
 }
@@ -185,4 +187,33 @@ p {
     margin: 10px;
     font-weight: bolder;
     color: steelblue;
+}
+
+.project-contener {
+    display: flex;
+    width: 50%;
+    align-content: center;
+    flex-direction: row;
+    background-color: #fefefe;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.project-contener a img{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+
+}
+
+.project-contener a {
+    border-radius: 50%;
+}
+
+.project-contener a:hover{
+    box-shadow: 0 50px 15px -30px #25293450;
+}
+
+.project-description{
+    padding: 10px;
 }
