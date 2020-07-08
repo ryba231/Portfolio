@@ -192,22 +192,25 @@ p {
 .project-contener {
     display: flex;
     width: 50%;
-    align-content: center;
+    align-content: flex-start;
     flex-direction: row;
     background-color: #fefefe;
     border-radius: 4px;
     padding: 10px;
+    margin: 10px;
 }
 
 .project-contener a img{
-    width: 350px;
-    height: 350px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
 
 }
 
 .project-contener a {
     border-radius: 50%;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .project-contener a:hover{
@@ -215,5 +218,42 @@ p {
 }
 
 .project-description{
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    text-align: start;
+    flex-direction: column;
     padding: 10px;
+    color: rgb(61, 60, 60);
+}
+
+.project-description small{
+    margin-bottom: 10px;
+}
+
+.project-description div{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 10px;
+}
+
+.project-description a{
+    text-decoration: none;
+    color: rgb(61, 60, 60);
+    padding: 5px;
+    background-color: #ebf2f8;
+    border-radius: 0;
+    border-bottom: 2px solid steelblue;
+}
+
+.project-description a:hover{
+    color: white;
+    background-color: steelblue;
+}
+
+.section-contener h1, .timeline-content h1{
+    color:rgb(61, 60, 60);
+    border-bottom: solid 2px steelblue;
+    padding-bottom: 5px;
 }
