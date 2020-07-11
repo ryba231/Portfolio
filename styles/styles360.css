@@ -53,7 +53,7 @@ p {
     width: 100%;
 }
 
-.header nav{
+#nav-bar{
     display: none;
     flex-direction: column;
     justify-content: center;
@@ -64,6 +64,7 @@ p {
     color: rgba(0, 0, 0, 0.5);
     font-size: 20px;
     font-weight: bold;
+    margin-top:10px;
 }
 
 .header nav a:hover {
@@ -97,7 +98,11 @@ p {
 }
 
 .nav-social-media a{
-    margin: 10px 0;
+    margin-right:5px;
+}
+
+.nav-social-media a i {
+    font-size: x-large;
 }
 
 .parallax {
