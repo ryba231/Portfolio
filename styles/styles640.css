@@ -32,26 +32,38 @@ p {
 
 .footer p {
     color: rgba(0, 0, 0, 0.9);
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .header {
     display: flex;
     background-color: #fefefe;
-    flex-direction: row;
-    padding: 20px;
-    justify-content: space-around;
+    flex-direction: column;
+    padding: 20px 10px;
+    align-items: center;
     position: fixed;
     z-index: 1;
     width: 100%;
 }
 
+.header div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#nav-bar {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .header nav a {
     text-decoration: none;
     color: rgba(0, 0, 0, 0.5);
-    font-size: 16px;
+    font-size: 20px;
     font-weight: bold;
-    margin: 0 5px;
+    margin-top: 10px;
 }
 
 .header nav a:hover {
@@ -66,8 +78,30 @@ p {
     font-size: larger;
 }
 
-.navbar-btn{
-    visibility: hidden;
+.navbar-btn {
+    visibility: visible;
+    text-decoration: none;
+    padding: 2px 4px;
+    color: rgba(0, 0, 0, 0.5);
+    margin: 0 20px;
+}
+
+.navbar-btn:hover {
+    background-color: steelblue;
+    color: #fefefe;
+}
+
+.nav-social-media {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-social-media a {
+    margin-right: 10px;
+}
+
+.nav-social-media a i {
+    font-size: x-large;
 }
 
 .parallax {
@@ -117,7 +151,7 @@ p {
     list-style: none;
     text-align: left;
     font-weight: 300;
-    max-width: 30%;
+    max-width: 60%;
     position: relative;
 }
 
@@ -147,10 +181,11 @@ p {
 }
 
 .timeline .event::before {
-    left: -240.5px;
-    color: rgb(0, 0, 0);
+    left: 0;
+    top: -40px;
+    color: rgb(255, 255, 255);
     content: attr(data-date);
-    text-align: right;
+    text-align: center;
     font-weight: 400;
     font-size: 14.5px;
     min-width: 120px;
@@ -177,38 +212,34 @@ p {
 .interests-position {
     display: flex;
     flex-direction: column;
-    font-size: 70px;
+    font-size: 60px;
     text-align: center;
     margin: 10px;
     color: rgb(61, 60, 60);
 }
 
 .interests-position:hover {
-    display: flex;
-    flex-direction: column;
-    font-size: 90px;
+    font-size: 70px;
     text-align: center;
-    margin: 10px;
     font-weight: bolder;
     color: steelblue;
 }
 
 .project-contener {
     display: flex;
-    width: 50%;
+    width: 80%;
     align-content: flex-start;
-    flex-direction: row;
+    flex-direction: column;
     background-color: #fefefe;
     border-radius: 4px;
     padding: 10px;
     margin: 10px;
 }
 
-.project-contener div img{
-    width: 90%;
-    height: 90%;
+.project-contener div img {
+    width: 100%;
+    height: 250px;
     border-radius: 50%;
-
 }
 
 .project-contener div {
@@ -219,9 +250,7 @@ p {
     margin-right: 10px;
 }
 
-
-
-.project-description{
+.project-description {
     display: flex;
     justify-content: start;
     align-items: flex-start;
@@ -231,41 +260,45 @@ p {
     color: rgb(61, 60, 60);
 }
 
-.project-description small{
+.project-description small {
     margin-bottom: 10px;
 }
 
-.project-description div{
+.project-description div {
     display: flex;
     width: 100%;
     justify-content: center;
+    flex-direction: column;
     margin: 10px;
 }
 
-.project-description a{
+.project-description a {
     text-decoration: none;
     color: rgb(61, 60, 60);
-    padding: 5px;
+    padding-top: 15px;
     background-color: #ebf2f8;
-    border-radius: 0;
     border-bottom: 2px solid steelblue;
-    margin:0 10px 0 10px;
-}
-.project-description a:first-child{
-    margin-left: 0;
-}
-
-.project-description a:last-child{
-    margin-right: 0;
+    margin: 0 10px 0 10px;
+    width: 100%;
+    height: 30px;
+    text-align: center;
 }
 
-.project-description a:hover{
+.project-description a:first-child {
+    margin: 0 0 10px 0;
+}
+
+.project-description a:last-child {
+    margin: 0;
+}
+
+.project-description a:hover {
     color: white;
     background-color: steelblue;
 }
 
-.section-contener h1, .timeline-content h1{
-    color:rgb(61, 60, 60);
+.section-contener h1, .timeline-content h1 {
+    color: rgb(61, 60, 60);
     border-bottom: solid 2px steelblue;
     padding-bottom: 5px;
 }
